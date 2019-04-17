@@ -1,4 +1,4 @@
-# week9-backend-project
+# pawpii
 
 PawPii is a group project that utilizes various front end and back end technologies such as NodeJS, ExpressJS, PostgresQL, 
 CSS/Bootstrap and various other Node Packages.
