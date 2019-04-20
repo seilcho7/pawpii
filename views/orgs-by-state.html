@@ -55,7 +55,7 @@
         </div>
     </nav>
     <div class="text-center pt-3 pb-3" style="font-size: 3vh"><strong>Organizations located in ${state}</strong></div>
-    <div class="card-group">
+    <div class="card-group" style="justify-content: center; flex-flow:row wrap;">
         ${
             orgs.map((anOrg) => {
                 return `
@@ -63,7 +63,7 @@
     action="/organization/dogs/${anOrg.id}"
     method="GET"
 >
-                <div name="id" class="card col-lg-4 m-2 text-center" style="max-width: 18rem;" value="${anOrg.id}">
+                <div name="id" class="card col-lg-4 m-2 text-center" style="max-width: 18rem; width: 300px;" value="${anOrg.id}">
 
                     <strong>${anOrg.name}</strong>
                     ${anOrg.address}<br>
