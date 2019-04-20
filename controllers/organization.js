@@ -204,7 +204,7 @@ async function getProfile (req, res) {
     let favorited = 'https://i.imgur.com/4PfDTQ4.png';
 
     if (inFavorite) {
-        favorited = 'https://i.imgur.com/BPk44AP.png'
+        favorited = 'https://i.imgur.com/slQYk1b.png'
 
     }
 
@@ -221,6 +221,7 @@ async function getProfile (req, res) {
                     logout: '',
                     id: '',
                     dog: oneDog,
+                    favoritehide: '',
                     favoritepic: favorited
                 }
                 });
@@ -235,6 +236,7 @@ async function getProfile (req, res) {
                             logout: '',
                             id: userInstance.orgId,
                             dog: oneDog,
+                            favoritehide: 'd-none',
                             favoritepic: ''
                         }
                     });

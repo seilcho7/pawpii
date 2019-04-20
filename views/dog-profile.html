@@ -64,16 +64,13 @@
             action="/organization/dogs/${dog.org_id}/${dog.id}"
             method="POST"
             class="text-center">
-            <button class="bg-transparent border-white" type="submit"><img src=${favoritepic}></button> 
+            <button class="${favoritehide}" style ="border:none; outline:none;" type="submit"><img class="${favoritehide}" style="width: 70%;" src=${favoritepic}></button> 
         </form>
-        <div class="w-75 mx-auto text-center">
-            <p class="font-weight-bold m-0"> Name: </p>${dog.name}
-            <br>
-            <p class="font-weight-bold m-0"> Breed: </p>${dog.breed}
-            <br>
-            <p class="font-weight-bold m-0"> Age: </p> ${dog.age}
-            <br>
-            <p class="font-weight-bold m-0"> Description:</p> ${dog.description}
+        <div class="w-100 mx-auto">
+            <p class="m-1"><strong>Name: </strong>${dog.name}</p>
+            <p class="m-1"><strong>Breed: </strong>${dog.breed}</p>
+            <p class="m-1"><strong>Age: </strong>${dog.age}</p> 
+            <p class="m-2">${dog.description}</p>
         </div>
 
     </div>

@@ -94,7 +94,7 @@
         </form>
             <h3 class="text-center mt-4 mb-2">Delete Dog</h3>
             
-            <div class="card-group text-center px-5">
+            <div class="card-group text-center">
                 ${
                     dogsA.map((aDog) => {
                         return `
@@ -102,8 +102,8 @@
                                     action="/organization/add-delete/${aDog.id}"
                                     method="POST"      
                         >
-                            <div class="mx-auto text-center p-2" style="width: 18rem;" id=${aDog.id}>
-                                        <img src="${aDog.image_url}" class="card-img-top" alt="" >
+                            <div class="mx-auto text-center p-2 mb-3 mx-auto" style="width: 18rem;" id=${aDog.id}>
+                                        <img src="${aDog.image_url}" class="card-img-top" alt="" style="vertical-align: 0;">
                                         <button type="submit" class="btn btn-danger">Delete</button>
                             </div>
                                 </form>
