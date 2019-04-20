@@ -204,7 +204,7 @@ async function getProfile (req, res) {
     let favorited = 'https://i.imgur.com/4PfDTQ4.png';
 
     if (inFavorite) {
-        favorited = 'https://i.imgur.com/slQYk1b.png'
+        favorited = 'https://i.imgur.com/BPk44AP.png'
 
     }
 
