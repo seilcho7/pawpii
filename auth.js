@@ -13,7 +13,7 @@ const setupAuth = (app) => {
   passport.use(new GithubStrategy({
     clientID: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
-    callbackURL: "http://localhost:3000/github/auth"
+    callbackURL: "http://localhost:4000/github/auth"
   }, async (accessToken, refreshToken, profile, done) => {
 
     return done(null, profile);
@@ -95,7 +95,7 @@ const setupAuth = (app) => {
       req.session.save(() => {
         // make sure the session is saved
         // before we send them to the homepage!
-        res.redirect('/dashboard');
+        res.redirect('/');
       });
     }
   );

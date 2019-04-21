@@ -1,6 +1,8 @@
 require('dotenv').config();
 const express = require('express');
 const es6Renderer = require('express-es6-template-engine');
+// const setupAuth = require('./auth');
+// const ensureAuthenticated = require('./auth').ensureAuthenticated;
 
 // Routers
 const homeRouter = require('./routes/home');
