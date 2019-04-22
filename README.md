@@ -1,5 +1,7 @@
 # pawpii
 
+![Image description](https://imgur.com/0e1ec983-0af0-4bb6-b5c4-d10c7ebe5d8d)
+
 PawPii is a group project that utilizes various front end and back end technologies such as NodeJS, ExpressJS, PostgresQL, 
 CSS/Bootstrap and various other Node Packages.
 
